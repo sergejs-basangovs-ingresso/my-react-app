@@ -11,7 +11,9 @@
     "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "code-coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec
+    ./node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",

@@ -10,4 +10,4 @@ jobs:
       - run: npm test
       - run: # run coverage report
           name: code-coverage
-          command: "./node_modules/.bin/nyc report --reporter=text-lcov"
+          command: "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec ./node_modules/.bin/codecov"
