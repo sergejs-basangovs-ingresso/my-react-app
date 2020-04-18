@@ -12,8 +12,7 @@
     "test:watch": "npm test -- --watch",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "code-coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec
-    ./node_modules/.bin/codecov"
+    "code-coverage": "./node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",
